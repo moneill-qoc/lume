@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record id="res_partner_image_inherit" model="ir.ui.view">
+            <field name="name">res.partner.image_tab.inherit</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="replace">
+                    <notebook>
+                        <page name="dl_image_tab" string="DL">
+                            <field name="dl_image" widget="image"/>
+                        </page>
+                        <page name="med_image_tab" string="Med ID">
+                            <field name="med_id_image" widget="image"/>
+                        </page>
+                        <page name="internal_notes_tab" string="Internal Notes">
+<!--                            <field name="internal_log"/>-->
+                        </page>
+                    </notebook>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

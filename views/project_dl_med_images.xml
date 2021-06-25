@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+        <record id="view_project_task_image_inherit" model="ir.ui.view">
+            <field name="name">project.task.image_tab.inherit</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2"/>
+            <field name="arch" type="xml">
+<!--                <xpath expr="//notebook" position="replace">-->
+                    <notebook position="inside">
+                        <page name="dl_image_tab" string="DL">
+<!--                            <field name="partner_id" string="Customer" widget="res_partner_many2one" invisible="1"/>-->
+<!--                            <field name="dl_image" widget="image" required="1"/>-->
+                        </page>
+<!--                        <page name="me_image_tab" string="Med ID">-->
+<!--                            <field name="med_id_image" widget="image" />-->
+<!--                        </page>-->
+<!--                        <page name="internal_notes" string="Internal Notes">-->
+<!--                            <field name="notes" placeholder="Internal note..."/>-->
+<!--                        </page>-->
+                    </notebook>
+<!--                </xpath>-->
+            </field>
+        </record>
+    </data>
+</odoo>
